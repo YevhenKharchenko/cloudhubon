@@ -3,17 +3,17 @@
   padding-bottom: 80px;
   background-image: url(../img/hero/hero-bg-mob.png);
   background-repeat: no-repeat;
-  background-position: bottom 150px center;
+  background-position: top 187px center;
   background-size: auto;
   max-width: 375px;
-  margin: 0 auto;
-  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
-    padding-top: 232px;
-    padding-bottom: 112px;
+    padding-top: 208px;
+    padding-bottom: 184px;
     background-image: url(../img/hero/hero-bg-desk.png);
-    background-position: top 131px center;
+    background-position: top 219px right 72px;
     max-width: 1440px;
   }
 }
@@ -21,68 +21,71 @@
 .hero-container {
 }
 
-.hero-content-wrapper {
-}
-
 .hero-title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
   font-size: 32px;
-  line-height: 1.5;
-  text-align: center;
-  color: #374151;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 24px;
+  line-height: 1.3;
+  color: #1f2937;
+  margin-bottom: 268px;
 
   @include media(desktop) {
-    font-size: 48px;
+    font-size: 72px;
     margin-bottom: 56px;
   }
 }
 
-.hero-title-span {
-  color: #2563eb;
+.hero-br {
+  @include media(desktop) {
+    display: none;
+  }
 }
 
 .hero-text {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
-  text-align: center;
-  color: #374151;
-  margin-bottom: 258px;
+  color: #1f2937;
+  margin-bottom: 24px;
 
   @include media(desktop) {
-    font-size: 24px;
-    max-width: 635px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 56px;
+    font-size: 32px;
+    max-width: 636px;
+    margin-bottom: 64px;
   }
 }
 
 .hero-btn {
-  background: #a3e635;
-  border-radius: 40px;
+  background: #2563eb;
+  border-radius: 16px;
   padding: 12px 24px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  width: 100%;
+  max-width: 343px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
-  color: #1f1f1f;
-  text-align: center;
-  width: 100%;
+  color: #f9fafb;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+
+  &:active,
+  &:focus {
+    background: #2457c6;
+  }
 
   @include media(desktop) {
     padding: 16px 24px;
-    font-size: 24px;
-    max-width: 344px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 251px;
+    margin: 0;
+
+    &:hover {
+      background: #2457c6;
+    }
   }
 }

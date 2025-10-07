@@ -26,19 +26,19 @@
 .cookie-banner-text-wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 205px;
+  max-width: 199px;
 
   @include media(desktop) {
-    max-width: 477px;
+    max-width: 511px;
   }
 }
 
 .cookie-banner-text {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: #374151;
+  color: #1f2937;
 
   @include media(desktop) {
     font-size: 18px;
@@ -46,14 +46,14 @@
 }
 
 .cookie-banner-link {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: #374151;
+  color: #1f2937;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: #2c6eff;
+  color: #70b2ff;
 
   @include media(desktop) {
     font-size: 18px;
@@ -73,16 +73,16 @@
 
 .cookie-decline-btn {
   background: rgba(255, 255, 255, 0.01);
-  border: 2px solid #a3e635;
-  border-radius: 50px;
-  padding: 8px;
+  border: 2px solid #00bfa6;
+  border-radius: 12px;
+  padding: 9px;
   width: 100%;
-  max-width: 122px;
-  font-family: 'Roboto', sans-serif;
+  max-width: 128px;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: #374151;
+  color: #1f2937;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,18 +95,17 @@
 }
 
 .cookie-accept-btn {
-  background: #a3e635;
-  border: 1px solid #2563eb;
-  border: 1px solid #a3e635;
-  border-radius: 50px;
-  padding: 8px;
+  background: #00bfa6;
+  border: 1px solid #00bfa6;
+  border-radius: 12px;
+  padding: 9px;
   width: 100%;
-  max-width: 122px;
-  font-family: 'Roboto', sans-serif;
+  max-width: 128px;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: #374151;
+  color: #f9fafb;
   display: flex;
   justify-content: center;
   align-items: center;

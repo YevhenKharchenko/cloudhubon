@@ -1,6 +1,6 @@
 .header {
   backdrop-filter: blur(30px);
-  background: #c8ecf3;
+  background: #2c2c2c;
   padding-top: 16px;
   padding-bottom: 16px;
   position: fixed;
@@ -37,11 +37,11 @@
 }
 
 .header-span {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
-  color: #05163b;
+  color: #f9f9f9;
 
   @include media(desktop) {
     font-size: 32px;
@@ -59,11 +59,11 @@
 }
 
 .nav-list-link {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.4;
-  color: #05163b;
+  color: #f9f9f9;
   transition: all 0.3s ease-in-out;
 
   &:hover,
@@ -85,11 +85,9 @@
 }
 
 .menu-icon {
-  stroke: #05163b;
 }
 
 .close-icon {
-  stroke: #05163b;
 }
 
 .close-btn {

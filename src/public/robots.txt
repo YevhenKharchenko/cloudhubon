@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://autospoton.com/sitemap.xml
+Sitemap: https://cloudhubon.space/sitemap.xml

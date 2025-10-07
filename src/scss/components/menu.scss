@@ -1,7 +1,7 @@
 .context-menu {
   display: none;
   backdrop-filter: blur(30px);
-  background: #c8ecf3;
+  background: #2c2c2c;
   padding: 0 16px 16px 16px;
   justify-content: end;
   max-width: 375px;
@@ -29,12 +29,12 @@
 }
 
 .context-list-link {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   text-align: right;
-  color: #05163b;
+  color: #f9f9f9;
   transition: all 0.3s ease-in-out;
 
   &:active {
