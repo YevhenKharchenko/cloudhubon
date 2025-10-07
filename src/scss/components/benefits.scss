@@ -1,0 +1,114 @@
+.benefits-section {
+  @include media(desktop) {
+  }
+}
+
+.benefits-section-wrapper {
+  padding-bottom: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-bottom: 112px;
+    max-width: 1440px;
+  }
+}
+
+.benefits-container {
+  @include media(desktop) {
+  }
+}
+
+.benefits-title {
+  @include media(desktop) {
+  }
+}
+
+.benefits-subtitle {
+  @include media(desktop) {
+  }
+}
+
+.benefits-swiper-container {
+  max-width: 343px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1297px;
+  }
+}
+
+.benefits-swiper-container.show {
+  visibility: visible;
+}
+
+.benefits-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+  }
+}
+
+.benefits-slide {
+  background: #fff;
+  border: 1px solid #2563eb;
+  border-radius: 30px;
+  padding: 16px;
+  max-width: 343px;
+  min-height: 99px;
+  display: flex !important;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media(desktop) {
+    padding: 24px;
+    gap: 24px;
+    width: 100% !important;
+    max-width: 416px;
+    min-height: 126px;
+  }
+}
+
+.benefits-slide-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #374151;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.benefits-slide-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #415475;
+
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+
+.benefits-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: rgba(163, 230, 53, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.benefits-dot.active {
+  background-color: #a3e635;
+}

@@ -1,0 +1,126 @@
+.cookie-banner-section {
+  backdrop-filter: blur(60px);
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px 20px;
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  gap: 8px;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: none;
+  z-index: 100;
+  display: none;
+
+  @include media(desktop) {
+    padding: 20px 30px;
+    max-width: 1440px;
+    justify-content: space-between;
+  }
+}
+
+.cookie-banner-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 205px;
+
+  @include media(desktop) {
+    max-width: 477px;
+  }
+}
+
+.cookie-banner-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #374151;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.cookie-banner-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #374151;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #2c6eff;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.cookie-banner-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  @include media(desktop) {
+    flex-direction: row;
+  }
+}
+
+.cookie-decline-btn {
+  background: rgba(255, 255, 255, 0.01);
+  border: 2px solid #a3e635;
+  border-radius: 50px;
+  padding: 8px;
+  width: 100%;
+  max-width: 122px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #374151;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    padding: 12px 21px;
+    max-width: max-content;
+    font-size: 18px;
+  }
+}
+
+.cookie-accept-btn {
+  background: #a3e635;
+  border: 1px solid #2563eb;
+  border: 1px solid #a3e635;
+  border-radius: 50px;
+  padding: 8px;
+  width: 100%;
+  max-width: 122px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #374151;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    padding: 12px 21px;
+    max-width: max-content;
+    font-size: 18px;
+  }
+}
+
+.show-cookie-banner {
+  display: flex;
+
+  @include media(desktop) {
+  }
+}

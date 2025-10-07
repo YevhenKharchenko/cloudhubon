@@ -1,0 +1,154 @@
+.services-section {
+  @include media(desktop) {
+  }
+}
+
+.services-section-wrapper {
+  padding-bottom: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-bottom: 112px;
+    max-width: 1440px;
+  }
+}
+
+.services-container {
+  @include media(desktop) {
+  }
+}
+
+.services-title {
+  @include media(desktop) {
+  }
+}
+
+.services-subtitle {
+  @include media(desktop) {
+  }
+}
+
+.services-swiper-container {
+  max-width: 253px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1297px;
+  }
+}
+
+.services-swiper-container.show {
+  visibility: visible;
+}
+
+.services-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+  }
+}
+
+.services-slide {
+  background: rgba(37, 99, 235, 0.1);
+  border: 1px solid #2563eb;
+  border-radius: 30px;
+  padding: 16px;
+  max-width: 253px;
+  min-height: 130px;
+  display: flex !important;
+  flex-direction: column;
+  gap: 8px;
+
+  @include media(desktop) {
+    padding: 24px;
+    gap: 16px;
+    width: 100% !important;
+    max-width: 416px;
+    min-height: 142px;
+  }
+}
+
+.services-slide-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #374151;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.services-slide-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #415475;
+  margin-top: auto;
+
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.services-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: rgba(163, 230, 53, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.services-dot.active {
+  background-color: #a3e635;
+}
+
+.services-btn {
+  backdrop-filter: blur(40px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #a3e635;
+  border-radius: 40px;
+  padding: 12px 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #374151;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+
+  @include media(desktop) {
+    padding: 16px 24px;
+    font-size: 24px;
+    max-width: max-content;
+    margin-left: auto;
+    margin-top: 24px;
+  }
+}
