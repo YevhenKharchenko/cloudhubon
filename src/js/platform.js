@@ -1,11 +1,11 @@
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
 
-const benefitsDots = document.querySelectorAll('.benefits-dot');
+const platformDots = document.querySelectorAll('.platform-dot');
 
-let benefitsSwiper;
+let platformSwiper;
 
-benefitsSwiper = new Swiper('.benefits-swiper-container', {
+platformSwiper = new Swiper('.platform-swiper-container', {
   direction: 'horizontal',
   loop: false,
   grabCursor: true,
@@ -21,7 +21,7 @@ benefitsSwiper = new Swiper('.benefits-swiper-container', {
   },
   breakpoints: {
     1440: {
-      slidesPerView: 6,
+      slidesPerView: 4,
       grabCursor: false,
       allowTouchMove: false,
       spaceBetween: 0,
@@ -30,23 +30,23 @@ benefitsSwiper = new Swiper('.benefits-swiper-container', {
   on: {
     init: () => {
       document
-        .querySelector('.benefits-swiper-container')
+        .querySelector('.platform-swiper-container')
         .classList.add('show');
     },
     slideChange: function () {
-      updateBenefitsDots(this.realIndex);
+      updatePlatformDots(this.realIndex);
     },
   },
 });
 
-function updateBenefitsDots(index) {
-  benefitsDots.forEach((dot, i) => {
+function updatePlatformDots(index) {
+  platformDots.forEach((dot, i) => {
     dot.classList.toggle('active', i === index);
   });
 }
 
-benefitsDots.forEach((dot, index) => {
+platformDots.forEach((dot, index) => {
   dot.addEventListener('click', () => {
-    benefitsSwiper.slideTo(index);
+    platformSwiper.slideTo(index);
   });
 });

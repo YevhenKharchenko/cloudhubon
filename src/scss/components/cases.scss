@@ -1,9 +1,4 @@
-.studies-wrapper {
-  @include media(desktop) {
-  }
-}
-
-.studies-section {
+.cases-section {
   padding-bottom: 80px;
 
   @include media(desktop) {
@@ -11,80 +6,77 @@
   }
 }
 
-.studies-container {
+.cases-container {
   @include media(desktop) {
   }
 }
 
-.studies-title {
+.cases-title {
   @include media(desktop) {
   }
 }
 
-.studies-subtitle {
+.cases-subtitle {
   @include media(desktop) {
   }
 }
 
-.studies-list {
+.cases-list {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   gap: 12px;
 
   @include media(desktop) {
     flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
   }
 }
 
-.studies-list-item {
+.cases-list-item {
   background: #fff;
   border: 1px solid #2563eb;
-  border-radius: 30px;
-  padding: 16px;
+  border-radius: 16px;
+  padding: 15px;
   width: 100%;
+  max-width: 343px;
+  min-height: 91px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 8px;
 
   @include media(desktop) {
-    padding: 24px;
-    max-width: 416px;
+    padding: 23px;
     gap: 16px;
+    max-width: 306px;
+    min-height: 148px;
   }
 }
 
-.studies-item-title-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.studies-icon {
-  min-width: 40px;
-}
-
-.studies-item-title {
-  font-family: 'Roboto', sans-serif;
+.cases-list-item-title {
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.5;
-  color: #374151;
+  text-align: center;
+  color: #1f2937;
 
   @include media(desktop) {
     font-size: 24px;
   }
 }
 
-.studies-item-text {
-  font-family: 'Roboto', sans-serif;
+.cases-list-item-text {
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: #415475;
+  text-align: center;
+  color: #1f2937;
 
   @include media(desktop) {
     font-size: 16px;

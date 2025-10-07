@@ -1,9 +1,9 @@
-.benefits-section {
+.platform-section {
   @include media(desktop) {
   }
 }
 
-.benefits-section-wrapper {
+.platform-section-wrapper {
   padding-bottom: 80px;
   max-width: 375px;
   margin-left: auto;
@@ -16,36 +16,36 @@
   }
 }
 
-.benefits-container {
+.platform-container {
   @include media(desktop) {
   }
 }
 
-.benefits-title {
+.platform-title {
   @include media(desktop) {
   }
 }
 
-.benefits-subtitle {
+.platform-subtitle {
   @include media(desktop) {
   }
 }
 
-.benefits-swiper-container {
-  max-width: 343px;
+.platform-swiper-container {
+  max-width: 253px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    max-width: 1297px;
+    max-width: 1296px;
   }
 }
 
-.benefits-swiper-container.show {
+.platform-swiper-container.show {
   visibility: visible;
 }
 
-.benefits-swiper-wrapper {
+.platform-swiper-wrapper {
   @include media(desktop) {
     display: flex;
     flex-wrap: wrap;
@@ -56,59 +56,59 @@
   }
 }
 
-.benefits-slide {
-  background: #fff;
-  border: 1px solid #2563eb;
-  border-radius: 30px;
+.platform-slide {
+  background: #eaf2fd;
+  border-radius: 16px;
   padding: 16px;
-  max-width: 343px;
-  min-height: 99px;
+  max-width: 253px;
+  min-height: 80px;
   display: flex !important;
-  flex-direction: column;
-  gap: 16px;
+  justify-content: center;
+  align-items: center;
 
   @include media(desktop) {
-    padding: 24px;
-    gap: 24px;
     width: 100% !important;
-    max-width: 416px;
-    min-height: 126px;
+    max-width: 306px;
+    min-height: 104px;
   }
 }
 
-.benefits-slide-title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #374151;
-
-  @include media(desktop) {
-    font-size: 20px;
-  }
-}
-
-.benefits-slide-text {
-  font-family: 'Roboto', sans-serif;
+.platform-slide-text {
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
-  color: #415475;
+  text-align: center;
+  color: #1f2937;
 
   @include media(desktop) {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 
-.benefits-dot {
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.platform-dot {
   width: 32px;
   height: 32px;
+  border: 1px solid rgba(37, 99, 235, 0.5);
   border-radius: 100%;
-  background-color: rgba(163, 230, 53, 0.3);
+  background-color: rgba(143, 175, 243, 0.3);
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
 
-.benefits-dot.active {
-  background-color: #a3e635;
+.platform-dot.active {
+  border: 1px solid #2563eb;
+  background-color: #8faff3;
 }

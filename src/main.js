@@ -1,4 +1,3 @@
 import './js/header.js';
-import './js/services.js';
-import './js/benefits.js';
+import './js/platform.js';
 import './js/banner.js';

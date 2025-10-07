@@ -1,0 +1,138 @@
+.contact-section {
+  padding-bottom: 80px;
+
+  @include media(desktop) {
+    padding-bottom: 112px;
+  }
+}
+
+.contact-container {
+  @include media(desktop) {
+  }
+}
+
+.contact-title {
+  @include media(desktop) {
+  }
+}
+
+.contact-subtitle {
+  @include media(desktop) {
+  }
+}
+
+.contact-content-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.contact-list-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+
+  @include media(desktop) {
+  }
+}
+
+.contact-item-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1f2937;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.contact-item-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1f2937;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.contact-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1f2937;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.contact-img-wrapper {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  width: 100%;
+  max-width: 343px;
+
+  @include media(desktop) {
+    gap: 10px;
+    max-width: 556px;
+  }
+}
+
+.contact-text-wrapper {
+  background: #fff;
+  border: 1px solid #2563eb;
+  border-radius: 16px;
+  padding: 6px;
+  width: 100%;
+  max-width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    padding: 14px;
+  }
+}
+
+.contact-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1f2937;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.contact-img {
+  min-width: 44px;
+  margin-top: 19px;
+
+  @include media(desktop) {
+    min-width: 100px;
+    margin-top: 27px;
+  }
+}
